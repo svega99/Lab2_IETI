@@ -24,6 +24,13 @@ Debes seguir el Código de honor del ingeniero de sistemas para defender el est�
 
 ## Part 3: Local Storage
 
+Página antes de ingresar, isLoggedIn en localstore false.
+
+![alt text](img/3.1.PNG)
+
+Página despues de ingresar, isLoggedIn en localstore true.
+
+![alt text](img/3.2.PNG)
 
 ## Autor
 

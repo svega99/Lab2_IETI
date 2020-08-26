@@ -8,7 +8,8 @@ import InputLabel from '@material-ui/core/InputLabel';
 import LockIcon from '@material-ui/icons/LockOutlined';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import './Login.css'
+import './Login.css';
+import {BrowserRouter as Router, Link, Route, Redirect} from 'react-router-dom';    
 
 
 export class Login extends React.Component{
@@ -94,6 +95,8 @@ export class Login extends React.Component{
         const psw=localStorage.getItem('password');
         if (this.state.email===user && this.state.password===psw){
             localStorage.setItem('isLoggedIn', true);
+            
+            return <Redirect to="/todo" />
             
         }else {
             localStorage.setItem('isLoggedIn', false);
